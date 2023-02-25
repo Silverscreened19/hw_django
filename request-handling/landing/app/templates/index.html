@@ -9,7 +9,22 @@
     <div class="section">
 
       <h3>Спасибо, что посетили наш сайт!</h3>
+      <a href="{% url "landing" %}?ab-test-arg=original" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">
+        оригинальный вариант лэндинга</a>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="section">
+      <a href="{% url "landing" %}?ab-test-arg=test" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">
+        тестовый вариант лэндинга</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <a href="{% url "stats" %}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">
+        статистика</a>
     </div>
   </div>
 {% endblock %}
